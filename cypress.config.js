@@ -13,14 +13,13 @@ module.exports = defineConfig({
 
       on('file:preprocessor', bundler);
       await addCucumberPreprocessorPlugin(on, config);
-
       return config;
     },
     specPattern: 'cypress/e2e/**/*.feature',
     supportFile: 'cypress/support/e2e.js',
     experimentalSessionAndOrigin: true,
-    baseUrl: //'https://staging.ernestatech.com',
-    projectId: //'1p9bba',
+    baseUrl: 'http://www.google.com',
+    //projectId: 'your-id',
     retries: 3,
     defaultCommandTimeout: 10000,
     pageLoadTimeout: 10000,

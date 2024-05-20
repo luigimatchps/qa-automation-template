@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cy:open": "npx cypress open",
+    "cy:run:chrome": "npx cypress run --browser chrome",
+    "cy:run:firefox": "npx cypress run --browser firefox"
   },
   "keywords": [],
   "author": "",
